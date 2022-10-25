@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CentroComercial</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_scrolling_tiendas">ScrollingTiendas</string>
+    <string name="tituloZonaComercial">CENTROS COMERCIALES VALENCIA</string>
+    <string name="shopOnline">SHOP ONLINE</string>
+    <string name="centroComercial">Centro Comercial</string>
+    <string name="nombre_centro1">Centro Comercial Bonaire</string>
+    <string name="nombre_direccion1">Autovía del Este, Km. 345, 46960, Valencia</string>
+    <string name="numTiendas1">10 Tiendas</string>
+    <string name="nombre_direccion2">Carrer de Menorca, 19, 46023 València</string>
+    <string name="nombre_centro2">Centro Comercial Aqua</string>
+    <string name="numTiendas2">15 Tiendas</string>
+    <string name="nombre_direccion3">Av. del Professor López Piñero, 16, 46013 València</string>
+    <string name="nombre_centro3">Centro Comercial Saler</string>
+    <string name="numTiendas3">20 Tiendas</string>
+    <string name="nombre_direccion4">Av. de Pius XII, 2, 46009 València</string>
+    <string name="nombre_centro4">C.C. Nuevo Centro</string>
+    <string name="numTiendas4">25 Tiendas</string>
+    <string name="compraOnline">COMPRA ONLINE</string>
+</resources>

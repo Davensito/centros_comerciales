@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/teal_700">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:layout_marginStart="@dimen/common_margin_min"
+            android:layout_marginEnd="@dimen/common_margin_min"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default"
+                android:paddingBottom="@dimen/common_padding_default"
+                android:background="@color/purple_200">
+
+                <ImageView
+                    android:id="@+id/imgPortada"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:contentDescription="@string/tituloZonaComercial" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/tituloZonaComercial"
+                    android:textAppearance="?attr/textAppearanceHeadline4"
+                    android:textColor="@color/black" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvCentro1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:layout_marginStart="@dimen/common_margin_min"
+            android:layout_marginEnd="@dimen/common_margin_min" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default"
+                android:paddingBottom="@dimen/common_padding_default"
+                android:background="@color/purple_200">
+
+                <ImageView
+                    android:id="@+id/imgCentro1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_perfil_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    android:contentDescription="@string/centroComercial" />
+
+                <TextView
+                    android:id="@+id/tvDireccion1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombre_direccion1"
+                    app:layout_constraintStart_toStartOf="@id/imgCentro1"
+                    app:layout_constraintBottom_toBottomOf="@id/imgCentro1"
+                    app:layout_constraintEnd_toEndOf="@id/nombreCentro1"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="@color/white"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/nombreCentro1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombre_centro1"
+                    app:layout_constraintStart_toStartOf="@id/imgCentro1"
+                    app:layout_constraintBottom_toTopOf="@id/tvDireccion1"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    android:textColor="@color/white"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/numTiendas1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/imgCentro1"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:background="@color/black"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvCentro2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:layout_marginStart="@dimen/common_margin_min"
+            android:layout_marginEnd="@dimen/common_margin_min" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default"
+                android:paddingBottom="@dimen/common_padding_default"
+                android:background="@color/purple_200">
+
+                <ImageView
+                    android:id="@+id/imgCentro2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_perfil_size"
+                    android:layout_marginStart="4dp"
+                    android:contentDescription="@string/centroComercial"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvDireccion2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombre_direccion2"
+                    app:layout_constraintStart_toStartOf="@id/imgCentro2"
+                    app:layout_constraintBottom_toBottomOf="@id/imgCentro2"
+                    app:layout_constraintEnd_toEndOf="@id/nombreCentro2"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="@color/white"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/nombreCentro2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombre_centro2"
+                    app:layout_constraintStart_toStartOf="@id/imgCentro2"
+                    app:layout_constraintBottom_toTopOf="@id/tvDireccion2"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    android:textColor="@color/white"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/numTiendas2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/imgCentro2"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:background="@color/black"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvCentro3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:layout_marginStart="@dimen/common_margin_min"
+            android:layout_marginEnd="@dimen/common_margin_min" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default"
+                android:paddingBottom="@dimen/common_padding_default"
+                android:background="@color/purple_200">
+
+                <ImageView
+                    android:id="@+id/imgCentro3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_perfil_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/centroComercial" />
+
+                <TextView
+                    android:id="@+id/tvDireccion3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombre_direccion3"
+                    app:layout_constraintStart_toStartOf="@id/imgCentro3"
+                    app:layout_constraintBottom_toBottomOf="@id/imgCentro3"
+                    app:layout_constraintEnd_toEndOf="@id/nombreCentro3"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="@color/white"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/nombreCentro3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombre_centro3"
+                    app:layout_constraintStart_toStartOf="@id/imgCentro3"
+                    app:layout_constraintBottom_toTopOf="@id/tvDireccion3"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    android:textColor="@color/white"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/numTiendas3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/imgCentro3"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:background="@color/black"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvCentro4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:layout_marginStart="@dimen/common_margin_min"
+            android:layout_marginEnd="@dimen/common_margin_min" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default"
+                android:paddingBottom="@dimen/common_padding_default"
+                android:background="@color/purple_200">
+
+                <ImageView
+                    android:id="@+id/imgCentro4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_perfil_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/centroComercial" />
+
+                <TextView
+                    android:id="@+id/tvDireccion4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombre_direccion4"
+                    app:layout_constraintStart_toStartOf="@id/imgCentro4"
+                    app:layout_constraintBottom_toBottomOf="@id/imgCentro4"
+                    app:layout_constraintEnd_toEndOf="@id/nombreCentro4"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="@color/white"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:id="@+id/nombreCentro4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombre_centro4"
+                    app:layout_constraintStart_toStartOf="@id/imgCentro4"
+                    app:layout_constraintBottom_toTopOf="@id/tvDireccion4"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    android:textColor="@color/white"
+                    android:background="@color/black"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/numTiendas4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/imgCentro4"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:background="@color/black"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

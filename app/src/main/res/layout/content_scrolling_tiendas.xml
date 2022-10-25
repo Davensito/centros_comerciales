@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling_tiendas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/teal_700">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:layout_marginStart="@dimen/common_margin_min"
+            android:layout_marginEnd="@dimen/common_margin_min"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conPort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default"
+                android:paddingBottom="@dimen/common_padding_default"
+                android:background="@color/purple_200">
+
+                <ImageView
+                    android:id="@+id/imgPortada"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="@color/purple_200"
+                    android:contentDescription="@string/tituloZonaComercial"/>
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textAppearance="?attr/textAppearanceHeadline4"
+                    android:textColor="@color/white" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvTienda1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:layout_marginStart="@dimen/common_margin_min"
+            android:layout_marginEnd="@dimen/common_margin_min"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default"
+                android:paddingBottom="@dimen/common_padding_default"
+                android:background="@color/purple_200">
+
+                <ImageView
+                    android:id="@+id/imgTienda1"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/tvNombreTienda1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="@color/purple_200"
+                    android:contentDescription="@string/tituloZonaComercial"/>
+
+                <TextView
+                    android:id="@+id/tvNombreTienda1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_min"
+                    android:layout_marginStart="@dimen/common_margin_min"
+                    android:layout_marginEnd="@dimen/common_margin_min"
+                    app:layout_constraintTop_toBottomOf="@+id/imgTienda1"/>
+
+                <TextView
+                    android:id="@+id/tvDescripcionTienda1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_min"
+                    android:layout_marginStart="@dimen/common_margin_min"
+                    android:layout_marginEnd="@dimen/common_margin_min"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNombreTienda1"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/comprar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/compraOnline"
+                    app:icon="@drawable/ic_shop_online"
+                    app:layout_constraintTop_toBottomOf="@id/tvDescripcionTienda1"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvTienda2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:layout_marginStart="@dimen/common_margin_min"
+            android:layout_marginEnd="@dimen/common_margin_min"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default"
+                android:paddingBottom="@dimen/common_padding_default"
+                android:background="@color/purple_200">
+
+                <ImageView
+                    android:id="@+id/imgTienda2"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/tvNombreTienda2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="@color/purple_200"
+                    android:contentDescription="@string/tituloZonaComercial"/>
+
+                <TextView
+                    android:id="@+id/tvNombreTienda2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_min"
+                    android:layout_marginStart="@dimen/common_margin_min"
+                    android:layout_marginEnd="@dimen/common_margin_min"
+                    app:layout_constraintTop_toBottomOf="@+id/imgTienda2"/>
+
+                <TextView
+                    android:id="@+id/tvDescripcionTienda2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_min"
+                    android:layout_marginStart="@dimen/common_margin_min"
+                    android:layout_marginEnd="@dimen/common_margin_min"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNombreTienda2"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/comprar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/compraOnline"
+                    app:icon="@drawable/ic_shop_online"
+                    app:layout_constraintTop_toBottomOf="@id/tvDescripcionTienda2"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvTienda3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:layout_marginStart="@dimen/common_margin_min"
+            android:layout_marginEnd="@dimen/common_margin_min"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default"
+                android:paddingBottom="@dimen/common_padding_default"
+                android:background="@color/purple_200">
+
+                <ImageView
+                    android:id="@+id/imgTienda3"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/tvNombreTienda3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="@color/purple_200"
+                    android:contentDescription="@string/tituloZonaComercial"/>
+
+                <TextView
+                    android:id="@+id/tvNombreTienda3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_min"
+                    android:layout_marginStart="@dimen/common_margin_min"
+                    android:layout_marginEnd="@dimen/common_margin_min"
+                    app:layout_constraintTop_toBottomOf="@+id/imgTienda3"/>
+
+                <TextView
+                    android:id="@+id/tvDescripcionTienda3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_min"
+                    android:layout_marginStart="@dimen/common_margin_min"
+                    android:layout_marginEnd="@dimen/common_margin_min"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNombreTienda3"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/comprar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/compraOnline"
+                    app:icon="@drawable/ic_shop_online"
+                    app:layout_constraintTop_toBottomOf="@id/tvDescripcionTienda3"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvTienda4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:layout_marginStart="@dimen/common_margin_min"
+            android:layout_marginEnd="@dimen/common_margin_min"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_padding_default"
+                android:paddingStart="@dimen/common_padding_default"
+                android:paddingEnd="@dimen/common_padding_default"
+                android:paddingBottom="@dimen/common_padding_default"
+                android:background="@color/purple_200">
+
+                <ImageView
+                    android:id="@+id/imgTienda4"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/tvNombreTienda4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="@color/purple_200"
+                    android:contentDescription="@string/tituloZonaComercial"/>
+
+                <TextView
+                    android:id="@+id/tvNombreTienda4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_min"
+                    android:layout_marginStart="@dimen/common_margin_min"
+                    android:layout_marginEnd="@dimen/common_margin_min"
+                    app:layout_constraintTop_toBottomOf="@+id/imgTienda4"/>
+
+                <TextView
+                    android:id="@+id/tvDescripcionTienda4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_min"
+                    android:layout_marginStart="@dimen/common_margin_min"
+                    android:layout_marginEnd="@dimen/common_margin_min"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNombreTienda4"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/comprar4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/compraOnline"
+                    app:icon="@drawable/ic_shop_online"
+                    app:layout_constraintTop_toBottomOf="@id/tvDescripcionTienda4"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
